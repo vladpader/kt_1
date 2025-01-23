@@ -4,7 +4,7 @@ namespace SimpleMvcApp.Controllers
 {
     public class GreetController : Controller
     {
-        public IActionResult Index(string id)
+        public IActionResult Greet(string id)
         {
             ViewData["Name"] = id;
             return View();
