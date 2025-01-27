@@ -34,7 +34,7 @@ namespace asp.net
                 pattern: "{controller=Home}/{action=Index}/{id?}");
             app.MapControllerRoute(
                 name: "Greet",
-                pattern: "{controller=Greet}/{action=Index}/{id?}");
+                pattern: "{controller=Greet}/{action=Greet}/{id?}");
            
             app.Run();
         }
