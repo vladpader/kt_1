@@ -35,7 +35,10 @@ namespace asp.net
             app.MapControllerRoute(
                 name: "Greet",
                 pattern: "{controller=Greet}/{action=Greet}/{id?}");
-           
+            app.MapControllerRoute(
+              name: "Edit",
+              pattern: "{controller=Edit}/{action=Edit}/{id?}");
+
             app.Run();
         }
     }

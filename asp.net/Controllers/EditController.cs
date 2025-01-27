@@ -4,13 +4,13 @@ namespace SimpleMvcApp.Controllers
 {
     public class EditController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Edit()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult Index(string message)
+        public IActionResult Edit(string message)
         {
             ViewData["Message"] = message;
             return View("DisplayMessage");
